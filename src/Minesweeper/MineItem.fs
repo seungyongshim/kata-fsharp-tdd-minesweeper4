@@ -5,10 +5,9 @@ type MineItem<'a> =
     | Uncovered of 'a
 
 module MineItem =
-
     let char f = function
         | Covered _ -> '.'
-        | Uncovered c -> c |> f
+        | Uncovered c -> f c
 
     let click v =
         match v with
