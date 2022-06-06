@@ -7,7 +7,8 @@
 
   <ItemGroup>
     <Compile Include="Cell.fs" />
-    <Compile Include="Cover.fs" />
+    <Compile Include="MineItem.fs" />
+    <Compile Include="MineField.fs" />
   </ItemGroup>
 
 </Project>

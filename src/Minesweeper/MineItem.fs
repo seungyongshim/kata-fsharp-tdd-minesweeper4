@@ -1,15 +1,14 @@
 namespace Minesweeper
 
-type MineItem<'T> =
-    | Covered of 'T
-    | Uncovered of 'T
+type MineItem<'a> =
+    | Covered of 'a
+    | Uncovered of 'a
 
 module MineItem =
-    open Cell
 
-    let char = function
-        | Uncovered c -> c |> char
+    let char f = function
         | Covered _ -> '.'
+        | Uncovered c -> c |> f
 
     let click v =
         match v with

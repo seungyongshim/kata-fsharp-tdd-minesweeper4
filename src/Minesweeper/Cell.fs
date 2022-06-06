@@ -3,8 +3,8 @@ namespace Minesweeper
 open System
 
 type Cell =
-    | Number of int
     | Bomb
+    | Number of int
 
 module Cell = 
     let char = function
