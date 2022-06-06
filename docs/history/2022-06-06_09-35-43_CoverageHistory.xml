@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2022-06-06_09-35-43" tag="7_2446904407">
+  <assembly name="Minesweeper">
+    <class name="Minesweeper.CellModule" coveredlines="2" coverablelines="2" totallines="15" coveredbranches="2" totalbranches="2" coveredcodeelements="1" totalcodeelements="1" />
+    <class name="Minesweeper.MineFieldModule" coveredlines="0" coverablelines="10" totallines="25" coveredbranches="0" totalbranches="4" coveredcodeelements="0" totalcodeelements="2" />
+    <class name="Minesweeper.MineItem" coveredlines="1" coverablelines="5" totallines="15" coveredbranches="1" totalbranches="4" coveredcodeelements="1" totalcodeelements="2" />
+  </assembly>
+</coverage>
