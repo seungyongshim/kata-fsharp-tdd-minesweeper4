@@ -17,3 +17,9 @@ module MineField =
             yield ((y, x), Covered Cell.init)
         } |> Map.ofSeq)
         
+    let rec click v pos =
+        match v with
+        | Setup _ -> start v
+        | Playing (w, h, z) ->
+            let clicked = z.Change (pos, Option.map MineItem.click)
+            Playing (w, h, clicked)

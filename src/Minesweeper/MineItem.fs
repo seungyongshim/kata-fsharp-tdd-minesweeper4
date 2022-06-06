@@ -11,5 +11,5 @@ module MineItem =
 
     let click v =
         match v with
-        | Covered c -> Uncovered c
+        | Covered c -> Uncovered c 
         | Uncovered _ -> v
