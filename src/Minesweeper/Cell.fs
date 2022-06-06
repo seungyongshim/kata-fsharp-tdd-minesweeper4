@@ -1,15 +1,13 @@
 namespace Minesweeper
 
+open System
+
 type Cell =
     | Number of int
     | Bomb
 
-
-type CellBuilder() =
-    member x.ReturnFrom(value) = value
-
-
-[<AutoOpen>]
 module Cell = 
-    let cell = new CellBuilder()
+    let char = function
+    | Bomb -> '*'
+    | Number i -> Convert.ToChar(i + (int)'0')
 
